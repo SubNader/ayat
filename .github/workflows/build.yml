@@ -18,4 +18,3 @@ jobs:
         source_branch: main
         destination_repository: SubNader
         destination_branch: serve
-        use_yarn: true
