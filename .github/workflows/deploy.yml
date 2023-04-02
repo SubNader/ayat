@@ -26,4 +26,5 @@ jobs:
         REPO: self
         BRANCH: serve
         FOLDER: dist
+        TARGET_DIR: serve
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
