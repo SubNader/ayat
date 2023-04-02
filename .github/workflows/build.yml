@@ -10,7 +10,7 @@ jobs:
       with:
         node-version: '14'
     - id: Build
-      uses: SubNader/vue-to-github-pages@v1.1.8
+      uses: SubNader/vue-to-github-pages@v1.1.9
       with:
         username: 'SubNader'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
