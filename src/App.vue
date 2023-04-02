@@ -53,11 +53,10 @@ export default {
     },
     setMode(val) {
       var get  = Cookies.get('mode');
-      var mode = this.mode
       if (get && val) {
         document.querySelector('body').setAttribute('data-theme', get)
       } else {
-        Cookies.set('mode', mode, { expires: 360 })
+        Cookies.set('mode', 'dark', { expires: 360 })
       }
     },
     zmode () {
