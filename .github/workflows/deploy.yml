@@ -28,3 +28,4 @@ jobs:
         BRANCH: serve
         FOLDER: dist
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        CLEAR_GLOBS_FILE: .glob
