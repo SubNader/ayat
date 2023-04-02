@@ -21,3 +21,4 @@ jobs:
         source_branch: main
         destination_repository: SubNader/ayat
         destination_branch: serve
+        install_command: install
