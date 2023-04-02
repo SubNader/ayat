@@ -1,0 +1,17 @@
+name: Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+    - uses: actions/checkout@v3
+    - id: Build
+      uses: SubNader/VuePagesAction@1.0.0
+      with:
+        username: 'SubNader'
+        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+        source_repository: harran55/vuejs-quran-web
+        source_branch: main
+        destination_repository: SubNader
+        destination_branch: serve
