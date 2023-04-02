@@ -12,13 +12,16 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: '14'
-    - id: Build
-      uses: SubNader/vue-to-github-pages@v1.3.3
-      with:
-        username: 'SubNader'
-        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
-        source_repository: harran55/vuejs-quran-web
-        source_branch: main
-        destination_repository: SubNader/ayat
-        destination_branch: serve
-        install_command: install
+    - name: Build
+      run: |
+        npm ci
+        npm run build
+      shell: bash
+    - name: Deploy
+      run: |
+        cd dist
+        ln -s index.html 404.html
+        git config --global user.email "username@users.noreply.github.com" && git config --global user.name "CD"
+        git add -A && git commit -m "Deploy latest"
+        git push origin main:dist
+      shell: bash
