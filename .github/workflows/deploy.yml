@@ -1,9 +1,9 @@
-name: Build
+name: Deploy
 on: [push]
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    name: Build
+    name: Deploy
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
@@ -11,7 +11,7 @@ jobs:
         python-version: '2.7' 
     - uses: actions/setup-node@v3
       with:
-        node-version: '17'
+        node-version: '14'
     - id: Build
       uses: SubNader/vue-to-github-pages@v1.3.0
       with:
