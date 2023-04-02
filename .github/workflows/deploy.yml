@@ -19,6 +19,7 @@ jobs:
       run: |
         npm ci
         npm run build
+        echo "ayat.me" > CNAME
       shell: bash
     - name: Deploy
       uses: s0/git-publish-subdir-action@develop
@@ -26,5 +27,4 @@ jobs:
         REPO: self
         BRANCH: serve
         FOLDER: dist
-        TARGET_DIR: serve
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
