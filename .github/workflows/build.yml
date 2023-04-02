@@ -10,11 +10,11 @@ jobs:
       with:
         node-version: 14
     - id: Build
-      uses: SubNader/vue-to-github-pages@v1.1.7
+      uses: SubNader/vue-to-github-pages@v1.1.8
       with:
         username: 'SubNader'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
         source_repository: harran55/vuejs-quran-web
         source_branch: main
-        destination_repository: SubNader
+        destination_repository: SubNader/ayat
         destination_branch: serve
