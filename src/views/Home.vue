@@ -2,9 +2,6 @@
     <div id="surahs" class="container">
             <div class="row">
               <div class="col-12 mb-3">
-                <div class="alert alert-info">
-                  الهدف من التطبيق تعليمي لمساعدتك على حفظ وقراءة القرآن الكريم بشكل أسهل واسرع إن شاء الله
-                </div>
               </div>
               <div class="col-12 mb-3">
                 <router-link :to="{name: 'SurahId', params: {id: save_page, ayah: save_ayah}}" v-if="save_get" class="get_save text-decoration-none">

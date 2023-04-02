@@ -16,12 +16,8 @@
     <router-view />
 
     <footer class="text-center">
-      المكتبة السحابية <b><a href="https://alquran.cloud/api" target="_blank" class="text-decoration-none">alquran.cloud</a></b><br/>
-      بناء وتطوير <b><a href="https://io.hsoub.com/u/h1om" target="_blank" class="text-decoration-none">
-      حران المري </a></b> <br/>
-      التطبيق مفتوح المصدر <b><a href="https://github.com/harran55/vuejs-quran-web" target="_blank" class="text-decoration-none">vuejs quran</a></b>
+      مدعم من <a href="https://alquran.cloud/api" target="_blank" class="text-decoration-none">Alquran</a>  و <a href="https://github.com/harran55/vuejs-quran-web" target="_blank" class="text-decoration-none">VueJS Quran</a>.
       <br/>
-      v 2022.1
     </footer>
   </div>
 </template>
