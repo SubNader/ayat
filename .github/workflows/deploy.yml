@@ -19,7 +19,6 @@ jobs:
       run: |
         npm ci
         npm run build
-        echo "ayat.me" > CNAME
       shell: bash
     - name: Deploy
       uses: s0/git-publish-subdir-action@develop
