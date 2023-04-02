@@ -16,7 +16,7 @@
     <router-view />
 
     <footer class="text-center">
-      مدعم من <a href="https://alquran.cloud/api" target="_blank" class="text-decoration-none">Alquran</a>  و <a href="https://github.com/harran55/vuejs-quran-web" target="_blank" class="text-decoration-none">VueJS Quran</a>.
+      مُدعَّم مِن <a href="https://alquran.cloud/api" target="_blank" class="text-decoration-none">القرآن كلاود</a>  و <a href="https://github.com/harran55/vuejs-quran-web" target="_blank" class="text-decoration-none">VueJS قرآن</a>.
       <br/>
     </footer>
   </div>
